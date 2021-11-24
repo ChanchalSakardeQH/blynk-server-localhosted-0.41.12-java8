@@ -125,7 +125,7 @@ That's it!
 
 + If opted, the local server will be set to auto start on boot. Else, you cna manually start the srever using the following command:
 
-        java -jar /home/${USER}/Blynk/server.jar -dataFolder /home/${USER}/Blynk/data -serverConfig /home/${USER}/Blynk/server.properties -mailConfig /home/{$USER}/Blynk/mail.properties &
+        sudo java -jar /home/${USER}/Blynk/server.jar -dataFolder /home/${USER}/Blynk/data -serverConfig /home/${USER}/Blynk/server.properties -mailConfig /home/{$USER}/Blynk/mail.properties &
 
 ## Docker container setup
 
