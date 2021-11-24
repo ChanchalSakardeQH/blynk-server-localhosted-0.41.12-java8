@@ -102,7 +102,7 @@ WARNING : only gmail accounts are allowed.
 NOTE : you'll need to setup Gmail to allow less secured applications.
 Go [here](https://www.google.com/settings/security/lesssecureapps) and then click "Allow less secure apps".
 
-## Quick local server setup on Raspberry PI
+## Quick local server setup on Raspberry PI (Works with even Pi Zero W)
 
 + Login to Raspberry Pi via ssh;
 + Download the setup script: 
