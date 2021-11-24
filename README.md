@@ -105,29 +105,27 @@ Go [here](https://www.google.com/settings/security/lesssecureapps) and then clic
 ## Quick local server setup on Raspberry PI
 
 + Login to Raspberry Pi via ssh;
-+ Install java 8: 
++ Download the setup script: 
         
-        sudo apt install openjdk-8-jdk openjdk-8-jre
+        wget "https://github.com/shivasiddharth/blynk-server/releases/download/v0.41.16/pi-local-server-setup.sh"
         
-+ Make sure you are using Java 8
++ Make the script executable:
 
-        java -version
-        Output: java version "1.8"
+        sudo chmod +x ./pi-local-server-setup.sh
         
-+ Download Blynk server jar file (or manually copy it to Raspberry Pi via ssh and scp command): 
++ Run the script: 
    
-        wget "https://github.com/Peterkn2001/blynk-server/releases/download/v0.41.16/server-0.41.16-java8.jar"
+        sudo ./pi-local-server-setup.sh
 
-+ Run the server on default 'hardware port 8080' and default 'application port 9443' (SSL port)
++ Open the server.properties file and make sure to add the OPENSSL password at:
 
-        java -jar server-0.41.16-java8.jar -dataFolder /home/pi/Blynk
+        server.ssl.key.pass=
         
 That's it! 
 
-+ As output you will see something like that:
++ If opted, the local server will be set to auto start on boot. Else, you cna manually start the srever using the following command:
 
-        Blynk Server successfully started.
-        All server output is stored in current folder in 'logs/blynk.log' file.
+        java -jar /home/${USER}/Blynk/server-0.41.16-java8.jar -dataFolder /home/${USER}/Blynk/data -serverConfig /home/${USER}/Blynk/server.properties -mailConfig /home/{$USER}/Blynk/mail.properties &
 
 ## Docker container setup
 
