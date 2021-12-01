@@ -24,7 +24,7 @@ If you need more information, please follow these links:
 - [Requirements](#requirements)
 - [Quick Local Server setup](#quick-local-server-setup)
 - [Enabling mail on Local server](#enabling-mail-on-local-server)
-- [Quick local server setup on Raspberry PI](#quick-local-server-setup-on-raspberry-pi)
+- [Quick local server setup on Raspberry PI](#quick-local-server-setup-on-raspberry-pi-works-with-even-pi-zero-w)
 - [Docker container setup](#docker-container-setup)
 - [Enabling server auto restart on unix-like systems](#enabling-server-auto-restart-on-unix-like-systems)
 - [Enabling server auto restart on Windows](#enabling-server-auto-restart-on-windows)
