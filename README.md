@@ -117,15 +117,15 @@ Go [here](https://www.google.com/settings/security/lesssecureapps) and then clic
    
         sudo ./pi-local-server-setup.sh
 
-+ Open the server.properties file and make sure to add the OPENSSL password at:
++ Open the server.properties file and make sure to add the email address at and remove the # symbol:    
 
-        server.ssl.key.pass=
+        #contact.email=     
         
 That's it! 
 
 + If opted, the local server will be set to auto start on boot. Else, you cna manually start the srever using the following command:
 
-        sudo java -jar /home/${USER}/Blynk/server.jar -dataFolder /home/${USER}/Blynk/data -serverConfig /home/${USER}/Blynk/server.properties -mailConfig /home/{$USER}/Blynk/mail.properties &
+        sudo java -jar /home/${USER}/Blynk/server.jar -dataFolder /home/${USER}/Blynk/data -serverConfig /home/${USER}/Blynk/server.properties -mailConfig /home/${USER}/Blynk/mail.properties &
 
 ## Docker container setup
 
