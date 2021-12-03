@@ -115,11 +115,7 @@ Go [here](https://www.google.com/settings/security/lesssecureapps) and then clic
         
 + Run the script: 
    
-        sudo ./pi-local-server-setup.sh
-
-+ Open the server.properties file and make sure to add the email address at and remove the # symbol:    
-
-        #contact.email=     
+        sudo ./pi-local-server-setup.sh 
         
 That's it! 
 
